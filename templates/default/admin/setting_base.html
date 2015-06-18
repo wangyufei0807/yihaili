@@ -1,0 +1,46 @@
+<!--{template 'default/admin/header.html'}-->
+<div class="right fr">
+	<div class="now">
+		<div class="fl now1"></div>
+		<div class="fl now2">基本信息</div>
+		<div class="fl now3"></div>
+		<div class="clear"></div>
+	</div>
+	<form method="post" action="{$action}">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="wenzhang">
+	<tr>
+		<td width="70">网站标题：</td>
+		<td><input type="text" name="info[web_title]" value="{$info['1']['setting_value']}" class="inputtext inputtext_400" /></td>
+	</tr>
+	<tr>
+		<td>SEO关键词：</td>
+		<td><input type="text" name="info[web_keywords]" value="{$info['2']['setting_value']}" class="inputtext inputtext_400" /></td>
+	</tr>
+	<tr>
+		<td>SEO描述：</td>
+		<td><textarea name="info[web_description]" style="width:400px;height:100px">{$info['3']['setting_value']}</textarea></td>
+	</tr>
+	<tr>
+		<td>版权所有：</td>
+		<td><input type="text" name="info[web_copyright]" value="{$info['4']['setting_value']}" class="inputtext inputtext_200" /></td>
+	</tr>
+	<tr>
+		<td>ICP备案号：</td>
+		<td><input type="text" name="info[web_icp]" value="{$info['5']['setting_value']}" class="inputtext inputtext_200" /></td>
+	</tr>
+	<tr>
+		<td>微博地址：</td>
+		<td><input type="text" name="info[web_weibo]" value="{$info['6']['setting_value']}" class="inputtext inputtext_400" /></td>
+	</tr>
+	<tr>
+		<td>统计代码：</td>
+		<td><textarea name="info[web_tongji]" style="width:400px;height:150px">{$info['7']['setting_value']}</textarea></td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><input type="submit" value="提 交" class="tjbtn"></td>
+	</tr>
+	</table>
+	</form>
+</div>
+<!--{template 'default/admin/footer.html'}-->

@@ -1,0 +1,37 @@
+<!--{template 'default/admin/header.html'}-->
+<div class="right fr">
+	<div class="now">
+		<div class="fl now1"></div>
+		<div class="fl now2">修改后台权限组</div>
+		<div class="fl now3"></div>
+		<div class="clear"></div>
+	</div>
+	<form method="post" action="{$action}">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="wenzhang">
+	<tr>
+		<td width="70">权限组 ID：</td>
+		<td>{$info['groupid']}</td>
+	</tr>
+	{if $info['groupid']==''}
+	<tr>
+		<td>权限组名：</td>
+		<td><input type="text" name="group_name" class="inputtext inputtext_200" /></td>
+	</tr>
+	{else}
+	<tr>
+		<td>权限组名：</td>
+		<td><input type="text" name="group_name" value="{$info['groupname']}" class="inputtext inputtext_200" /></td>
+	</tr>
+	{/if}
+	  <tr>
+		<td>操作权限：<span class='f_red'></span></td>
+		<td>{$auth_checkbox}</td>
+	  </tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><input type="submit" value="提 交" class="tjbtn" /></td>
+	</tr>
+	</table>
+	</form>
+</div>
+<!--{template 'default/admin/footer.html'}-->
