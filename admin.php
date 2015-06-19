@@ -2,13 +2,55 @@
 include('common.php');
 $admin_id_key=$_SESSION['admin_id_key'];
 $adminmenu[] = array(
-	'headnav' => '走进阿拉丁',
+	'headnav' => '关于我们',
 	'subnav' => array(
 		array('name' => '内容列表', 'menumark' => 'about_list', 'url' => 'admin.php?mod=about&act=list'),
 		array('name' => '添加内容', 'menumark' => 'about_add', 'url' => 'admin.php?mod=about&act=add')
 	)
 );
 $adminmenu[] = array(
+	'headnav' => '产品展示',
+	'subnav' => array(
+		array('name' => '产品分类', 'menumark' => 'category_article', 'url' => 'admin.php?mod=category&act=list&type=article'),
+		array('name' => '产品列表', 'menumark' => 'article_list', 'url' => 'admin.php?mod=article&act=list'),
+	)
+);
+$adminmenu[] = array(
+	'headnav' => '海参百科',
+	'subnav' => array(
+		array('name' => '文章分类', 'menumark' => 'category_article', 'url' => 'admin.php?mod=category&act=list&type=article'),
+		array('name' => '文章列表', 'menumark' => 'article_list', 'url' => 'admin.php?mod=article&act=list'),
+	)
+);
+$adminmenu[] = array(
+	'headnav' => '海参泡发方法',
+	'subnav' => array(
+		array('name' => '文章分类', 'menumark' => 'category_article', 'url' => 'admin.php?mod=category&act=list&type=article'),
+		array('name' => '文章列表', 'menumark' => 'article_list', 'url' => 'admin.php?mod=article&act=list'),
+	)
+);
+$adminmenu[] = array(
+	'headnav' => '海参做法',
+	'subnav' => array(
+		array('name' => '文章分类', 'menumark' => 'category_article', 'url' => 'admin.php?mod=category&act=list&type=article'),
+		array('name' => '文章列表', 'menumark' => 'article_list', 'url' => 'admin.php?mod=article&act=list'),
+	)
+);
+$adminmenu[] = array(
+	'headnav' => '养生资讯',
+	'subnav' => array(
+		array('name' => '文章分类', 'menumark' => 'category_article', 'url' => 'admin.php?mod=category&act=list&type=article'),
+		array('name' => '文章列表', 'menumark' => 'article_list', 'url' => 'admin.php?mod=article&act=list'),
+	)
+);
+$adminmenu[] = array(
+	'headnav' => '联系方式',
+	'subnav' => array(
+		array('name' => '内容列表', 'menumark' => 'about_list', 'url' => 'admin.php?mod=about&act=list'),
+		array('name' => '添加内容', 'menumark' => 'about_add', 'url' => 'admin.php?mod=about&act=add')
+	)
+);
+/*$adminmenu[] = array(
 	'headnav' => '新闻动态',
 	'subnav' => array(
 		array('name' => '文章分类', 'menumark' => 'category_article', 'url' => 'admin.php?mod=category&act=list&type=article'),
@@ -35,15 +77,16 @@ $adminmenu[] = array(
 	'subnav' => array(
 		array('name' => '内容列表', 'menumark' => 'parent_list', 'url' => 'admin.php?mod=parent&act=list')
 	)
-);
+);*/
 $adminmenu[] = array(
 	'headnav' => '用户管理',
 	'subnav' => array(
-		//array('name' => '会员列表', 'menumark' => 'user_list', 'url' => 'admin.php?mod=user&act=list'),
-		array('name' => '后台权限组', 'menumark' => 'admin_group', 'url' => 'admin.php?mod=group&act=list'),
+		array('name' => '会员列表', 'menumark' => 'user_list', 'url' => 'admin.php?mod=user&act=list'),
+		//array('name' => '后台权限组', 'menumark' => 'admin_group', 'url' => 'admin.php?mod=group&act=list'),
 		array('name' => '后台管理员', 'menumark' => 'admin_list', 'url' => 'admin.php?mod=admin&act=list')
 	)
 );
+
 /*
 $adminmenu[] = array(
 	'headnav' => '控制面板',
