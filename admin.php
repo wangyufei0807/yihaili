@@ -62,6 +62,7 @@ $adminmenu[] = array(
 	'headnav' => '用户管理',
 	'subnav' => array(
 		array('name' => '会员列表', 'menumark' => 'user_list', 'url' => 'admin.php?mod=user&act=list'),
+		array('name' => '在线留言', 'menumark' => 'message_list', 'url' => 'admin.php?mod=message&act=list'),
 		//array('name' => '后台权限组', 'menumark' => 'admin_group', 'url' => 'admin.php?mod=group&act=list'),
 		array('name' => '后台管理员', 'menumark' => 'admin_list', 'url' => 'admin.php?mod=admin&act=list')
 	)
