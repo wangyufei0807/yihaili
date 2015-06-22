@@ -8,36 +8,16 @@ $adminmenu[] = array(
 		array('name' => '添加内容', 'menumark' => 'about_add', 'url' => 'admin.php?mod=about&act=add')
 	)
 );
+
 $adminmenu[] = array(
 	'headnav' => '产品展示',
 	'subnav' => array(
-		array('name' => '产品分类', 'menumark' => 'category_article', 'url' => 'admin.php?mod=category&act=list&type=article'),
-		array('name' => '产品列表', 'menumark' => 'article_list', 'url' => 'admin.php?mod=article&act=list'),
+		array('name' => '产品分类', 'menumark' => 'category_product', 'url' => 'admin.php?mod=category&act=list&type=product'),
+		array('name' => '产品列表', 'menumark' => 'product_list', 'url' => 'admin.php?mod=product&act=list')
 	)
 );
 $adminmenu[] = array(
-	'headnav' => '海参百科',
-	'subnav' => array(
-		array('name' => '文章分类', 'menumark' => 'category_article', 'url' => 'admin.php?mod=category&act=list&type=article'),
-		array('name' => '文章列表', 'menumark' => 'article_list', 'url' => 'admin.php?mod=article&act=list'),
-	)
-);
-$adminmenu[] = array(
-	'headnav' => '海参泡发方法',
-	'subnav' => array(
-		array('name' => '文章分类', 'menumark' => 'category_article', 'url' => 'admin.php?mod=category&act=list&type=article'),
-		array('name' => '文章列表', 'menumark' => 'article_list', 'url' => 'admin.php?mod=article&act=list'),
-	)
-);
-$adminmenu[] = array(
-	'headnav' => '海参做法',
-	'subnav' => array(
-		array('name' => '文章分类', 'menumark' => 'category_article', 'url' => 'admin.php?mod=category&act=list&type=article'),
-		array('name' => '文章列表', 'menumark' => 'article_list', 'url' => 'admin.php?mod=article&act=list'),
-	)
-);
-$adminmenu[] = array(
-	'headnav' => '养生资讯',
+	'headnav' => '海参知识',
 	'subnav' => array(
 		array('name' => '文章分类', 'menumark' => 'category_article', 'url' => 'admin.php?mod=category&act=list&type=article'),
 		array('name' => '文章列表', 'menumark' => 'article_list', 'url' => 'admin.php?mod=article&act=list'),
@@ -46,8 +26,8 @@ $adminmenu[] = array(
 $adminmenu[] = array(
 	'headnav' => '联系方式',
 	'subnav' => array(
-		array('name' => '内容列表', 'menumark' => 'about_list', 'url' => 'admin.php?mod=about&act=list'),
-		array('name' => '添加内容', 'menumark' => 'about_add', 'url' => 'admin.php?mod=about&act=add')
+		array('name' => '内容列表', 'menumark' => 'contact_list', 'url' => 'admin.php?mod=contact&act=list'),
+		array('name' => '添加内容', 'menumark' => 'contact_add', 'url' => 'admin.php?mod=contact&act=add')
 	)
 );
 /*$adminmenu[] = array(

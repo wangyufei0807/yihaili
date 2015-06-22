@@ -1,4 +1,4 @@
-<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/index/news/list.html', '126b56ffee288bf3ae7f65a461d33a2f', 1354524169);?>
+<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/index/news/list.html', '126b56ffee288bf3ae7f65a461d33a2f', 1434969596);?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>

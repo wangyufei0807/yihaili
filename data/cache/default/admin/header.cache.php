@@ -1,4 +1,4 @@
-<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/admin/header.html', '1f94f8083bb31263b501165dfaf639bd', 1434686170);?>
+<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/admin/header.html', 'ff471362c356fcda230904d1f1411d1c', 1434979159);?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -14,7 +14,7 @@
 <body>
 <div class="bgimg"></div>
 <div class="pagetop">
-	<div class="logo fl"><img src="<?=PATH_URL?>templates/default/admin/images/logo.png" /></div>
+	<div class="logo fl">壹海里后台管理系统</div>
 	<div class="head_r fr">
 		<a href="/" target="_blank">【网站首页】</a>
 		<a href="admin.php?mod=do&amp;act=logout">【注销】</a>

@@ -1,12 +1,12 @@
-<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/admin/jingdiananli/jingdiananli_list.html', 'cb0a842d0983e120f0775348a2bb0ffd', 1354521302);?>
+<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/admin/jingdiananli/jingdiananli_list.html', 'da1ab7c2c1d904a2b431d383d3da918c', 1434970731);?>
 
 <? include($template->getfile('default/admin/header.html')); ?>
 <div class="right fr">
 	<div class="now">
 		<div class="fl now1"></div>
 		<div class="fl now2">
-			<span class="fl">案例列表</span>
-			<span class="fr fabu mat8"><a href="admin.php?mod=jingdiananli&amp;act=add">发布案例</a></span>
+			<span class="fl">产品列表</span>
+			<span class="fr fabu mat8"><a href="admin.php?mod=jingdiananli&amp;act=add">发布产品</a></span>
 		</div>
 		<div class="fl now3"></div>
 		<div class="clear"></div>
@@ -27,8 +27,8 @@
 	<tr>
 		<td class="bgtt" align="center" width="10"><input type="checkbox" name="checkall" onclick="pe_checkall(this, 'jingdiananli_id')" /></td>
 		<td class="bgtt" align="center" width="40">ID号</td>
-		<td class="bgtt" align="center">案例名称</td>
-		<td class="bgtt" align="center" width="100">案例分类</td>
+		<td class="bgtt" align="center">产品名称</td>
+		<td class="bgtt" align="center" width="100">产品分类</td>
 		<td class="bgtt" align="center" width="60">发布时间</td>
 		<td class="bgtt" align="center" width="50">点击数</td>
 		<td class="bgtt" align="center" width="70">操作</td>

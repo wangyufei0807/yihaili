@@ -1,4 +1,4 @@
-<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/admin/category_add.html', '5bf4194503bf1a14bda5e25fdcdb912e', 1354518485);?>
+<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/admin/category_add.html', '5bf4194503bf1a14bda5e25fdcdb912e', 1434973337);?>
 
 <? include($template->getfile('default/admin/header.html')); ?>
 <div class="right fr">
