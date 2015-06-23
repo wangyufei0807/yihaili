@@ -1,4 +1,4 @@
-<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/index/jingdiananli/index.html', '32c4f473d0a518a8397a8c8665cfa9ba', 1434970620);?>
+<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/index/jingdiananli/index.html', '32c4f473d0a518a8397a8c8665cfa9ba', 1434983953);?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>

@@ -24,6 +24,13 @@ $adminmenu[] = array(
 	)
 );
 $adminmenu[] = array(
+	'headnav' => '企业动态',
+	'subnav' => array(
+		array('name' => '文章分类', 'menumark' => 'category_news', 'url' => 'admin.php?mod=category&act=list&type=news'),
+		array('name' => '文章列表', 'menumark' => 'news_list', 'url' => 'admin.php?mod=news&act=list'),
+	)
+);
+$adminmenu[] = array(
 	'headnav' => '联系方式',
 	'subnav' => array(
 		array('name' => '内容列表', 'menumark' => 'contact_list', 'url' => 'admin.php?mod=contact&act=list'),

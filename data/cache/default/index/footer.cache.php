@@ -1,4 +1,4 @@
-<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/index/footer.html', 'dc77ea3caf66767dc675698c85348235', 1434979136);?>
+<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/index/footer.html', 'dc77ea3caf66767dc675698c85348235', 1435067630);?>
 <!--footer-->
 <STYLE type=text/css>#footer_banquan_right {
 	MARGIN-TOP: -5px; FLOAT: right; MARGIN-RIGHT: 7px

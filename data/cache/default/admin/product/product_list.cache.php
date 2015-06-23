@@ -1,4 +1,4 @@
-<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/admin/product/product_list.html', 'f5e4ff63d6211c5aa9686a7184311296', 1434973679);?>
+<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/admin/product/product_list.html', 'f5e4ff63d6211c5aa9686a7184311296', 1435067890);?>
 
 <? include($template->getfile('default/admin/header.html')); ?>
 <div class="right fr">
