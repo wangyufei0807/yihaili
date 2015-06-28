@@ -6,7 +6,7 @@
 		<div class="fl now3"></div>
 		<div class="clear"></div>
 	</div>
-	<div class="spqh mat8">
+	<!-- <div class="spqh mat8">
 		<div class="fr searbox mat3">
 			<form method="get">
 				<input type="hidden" name="mod" value="{$_g_mod}" />
@@ -16,11 +16,11 @@
 			</form>
 		</div>
 		<div class="clear"></div>
-	</div>
+	</div> -->
 	<form method="post" id="form">
 	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="list mat5">
 	<tr>
-		<td class="bgtt" align="center" width="10"><input type="checkbox" name="checkall" onclick="pe_checkall(this, 'msg_id')" /></td>
+		<td class="bgtt" align="center" width="10"><!-- <input type="checkbox" name="checkall" onclick="pe_checkall(this, 'msg_id')" /> --></td>
 		<td class="bgtt" align="center" width="40">ID号</td>
 		<td class="bgtt" align="center">姓名</td>
 		<td class="bgtt" align="center" width="200">邮箱</td>
@@ -30,7 +30,7 @@
 	</tr>
 	<!--{loop $info_list $key $v}-->
 	<tr>
-		<td align="center"><input type="checkbox" name="msg_id[]" value="{$v['msg_id']}"></td>
+		<td align="center"><!-- <input type="checkbox" name="msg_id[]" value="{$v['msg_id']}"> --></td>
 		<td align="center">{$v['msg_id']}</td>
 		<td align="center">{$v['user_tname']}</td>
 		<td align="center">{$v['user_email']}</td>
@@ -42,9 +42,9 @@
 	</tr>
 	<!--{/loop}-->
 	<tr>
-		<td class="bgtt"><input type="checkbox" name="checkall" onclick="pe_checkall(this, 'user_id')" /></td>
+		<td class="bgtt"><!-- <input type="checkbox" name="checkall" onclick="pe_checkall(this, 'msg_id')" /> --></td>
 		<td class="bgtt" colspan="6">
-			<span class="fl"><button href="admin.php?mod=message&act=delsql" onclick="return pe_cfall(this, 'user_id', 'form', '批量删除')">批量删除</button></span>
+			<!-- <span class="fl"><button href="admin.php?mod=message&act=delsql" onclick="return pe_cfall(this, 'msg_id', 'form', '批量删除')">批量删除</button></span> -->
 			<span class="fenye">{$page}</span>
 		</td>
 	</tr>

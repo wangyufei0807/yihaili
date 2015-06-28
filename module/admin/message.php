@@ -13,7 +13,7 @@ switch ($act) {
 		Core_Auth::checkauth("message_list"); //查看留言列表
 		$_g_keyword && $sqlwhere = " and `user_tname` like '%{$_g_keyword}%'";
 		$sqlwhere .= " order by `msg_id` desc";
-		$info_list = $db->selectall("select * from `".dbpre."message`", array(20, $_g_page));
+		$info_list = $db->selectall("select * from `".dbpre."message`", array(15, $_g_page));
 		foreach ($info_list as $k => $v) {
 			$info_list[$k]['msg_atime']=pe_date($v['msg_atime']);
 		}

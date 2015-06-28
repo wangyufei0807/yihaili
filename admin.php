@@ -17,14 +17,14 @@ $adminmenu[] = array(
 	)
 );
 $adminmenu[] = array(
-	'headnav' => '海参知识',
+	'headnav' => '壹海里百科',
 	'subnav' => array(
 		array('name' => '文章分类', 'menumark' => 'category_article', 'url' => 'admin.php?mod=category&act=list&type=article'),
 		array('name' => '文章列表', 'menumark' => 'article_list', 'url' => 'admin.php?mod=article&act=list'),
 	)
 );
 $adminmenu[] = array(
-	'headnav' => '企业动态',
+	'headnav' => '壹海里资讯',
 	'subnav' => array(
 		array('name' => '文章分类', 'menumark' => 'category_news', 'url' => 'admin.php?mod=category&act=list&type=news'),
 		array('name' => '文章列表', 'menumark' => 'news_list', 'url' => 'admin.php?mod=news&act=list'),
@@ -68,7 +68,7 @@ $adminmenu[] = array(
 $adminmenu[] = array(
 	'headnav' => '用户管理',
 	'subnav' => array(
-		array('name' => '会员列表', 'menumark' => 'user_list', 'url' => 'admin.php?mod=user&act=list'),
+		//array('name' => '会员列表', 'menumark' => 'user_list', 'url' => 'admin.php?mod=user&act=list'),
 		array('name' => '在线留言', 'menumark' => 'message_list', 'url' => 'admin.php?mod=message&act=list'),
 		//array('name' => '后台权限组', 'menumark' => 'admin_group', 'url' => 'admin.php?mod=group&act=list'),
 		array('name' => '后台管理员', 'menumark' => 'admin_list', 'url' => 'admin.php?mod=admin&act=list')

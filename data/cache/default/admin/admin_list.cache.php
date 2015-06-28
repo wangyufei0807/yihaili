@@ -1,4 +1,4 @@
-<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/admin/admin_list.html', '489a7a2ec880d46ebd1417a5be53fb01', 1354524538);?>
+<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/admin/admin_list.html', 'bfe3a0be905e0fe5c0f90e6d0a020a8c', 1435419483);?>
 
 <? include($template->getfile('default/admin/header.html')); ?>
 <div class="right fr">
@@ -6,7 +6,7 @@
 		<div class="fl now1"></div>
 		<div class="fl now2">
 			<span class="fl">管理列表</span>
-			<span class="fr fabu mat8"><a href="admin.php?mod=admin&amp;act=add">增加管理</a></span>
+			<!-- <span class="fr fabu mat8"><a href="admin.php?mod=admin&amp;act=add">增加管理</a></span> -->
 		</div>
 		<div class="fl now3"></div>
 		<div class="clear"></div>
@@ -23,8 +23,8 @@
 		<td align="center"><?=$v['admin_name']?></td>
 		<td align="center"><?=$v['admin_ltime']?></td>
 		<td align="center">
-			<a href="admin.php?mod=admin&amp;act=edit&amp;id=<?=$v['admin_id']?>" class="admin_edit">修改</a>
-			<a href="admin.php?mod=admin&amp;act=delsql&amp;id=<?=$v['admin_id']?>" class="admin_del" onclick="return pe_cfone('删除')">删除</a>
+			<a href="admin.php?mod=admin&amp;act=edit&amp;id=<?=$v['admin_id']?>" class="admin_edit">修改</a><!-- 
+			<a href="admin.php?mod=admin&amp;act=delsql&amp;id=<?=$v['admin_id']?>" class="admin_del" onclick="return pe_cfone('删除')">删除</a> -->
 		</td>
 	</tr><? } } ?><tr>
 		<td class="bgtt" colspan="5">

@@ -1,0 +1,43 @@
+<!--{template 'default/index/header.html'}-->
+
+	<!-- 内容 -->
+	<div class="g-bd">
+		<div class="g-in">
+			<div class="content-box">
+        		<div class="c-top">
+                    <em>YIHAILI</em><br>
+                    壹海里 · {$fenlei}
+        		</div>
+        		<div class="pro-list">
+                    <ul class="f-cb">
+                    	<!--{loop $info $v}-->
+                        <li>
+                            <div class="pro-item"><a href="#"><img width="210" height="210" src="{$v['product_logo']}"></a></div>
+                            <p><a href="#">{$v['product_name']}</a></p>
+                        </li>
+                        <!--{/loop}-->
+            		</ul>
+
+            		<div class="pagelink">
+            			
+            		</div>      
+        		</div>
+	    	</div>
+		</div>
+	</div>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		
+		//设置产品列表第四个图片右边距为0
+		
+		$(".pro-list li").each(function(){
+			var index = $(this).index();
+		
+			if((index+1)%4==0){
+			$(this).css("padding-right","0px")
+			}
+		})
+	});
+
+</script>
+<!--{template 'default/index/footer.html'}-->

@@ -12,7 +12,7 @@ switch ($act) {
 		$tag_arr = array();
 		$$info['article_text']=htmlspecialchars($info['article_text']);
 		$action = 'admin.php?mod=article&act=addsql';
-		include($template->getfile('default/admin/article_add.html'));
+		include($template->getfile('default/admin/article/article_add.html'));
 	break;
 	//#####################@ 文章增加sql @#####################//
 	case 'addsql':
@@ -52,7 +52,7 @@ switch ($act) {
 
 		$info['article_atime']=pe_date($info['article_atime']);
 		$action = "admin.php?mod=article&act=editsql&id={$_g_id}";
-		include($template->getfile('default/admin/article_add.html'));
+		include($template->getfile('default/admin/article/article_add.html'));
 	break;
 	//#####################@ 文章修改sql @#####################//
 	case 'editsql':
@@ -109,12 +109,12 @@ switch ($act) {
 		$sqlwhere .= " order by a.article_id desc";
 		$sql  = "select a.*,b.* from `".dbpre."article` as a,`".dbpre."category` as b where a.category_id=b.category_id".$sqlwhere;
 
-		$info_list = $db->selectall($sql, array(20, $page));
+		$info_list = $db->selectall($sql, array(15, $_g_page));
 		foreach ($info_list as $k => $v) {
 			$info_list[$k]['article_atime']=pe_date($v['article_atime']);
 		}
 		$page=$db->page->html;
-		include($template->getfile('default/admin/article_list.html'));
+		include($template->getfile('default/admin/article/article_list.html'));
 	break;
 }
 ?>

@@ -1,4 +1,4 @@
-<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/admin/do_login.html', 'cd3a07c36f3ab24ef8f284c2e35bc53e', 1435067634);?>
+<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/admin/do_login.html', 'cd3a07c36f3ab24ef8f284c2e35bc53e', 1435498080);?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>

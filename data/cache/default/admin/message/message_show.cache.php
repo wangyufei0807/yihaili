@@ -1,4 +1,4 @@
-<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/admin/message/message_show.html', '7ed22d926cc7a524c2527962c4ae85f1', 1434981007);?>
+<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/admin/message/message_show.html', '7ed22d926cc7a524c2527962c4ae85f1', 1435419894);?>
 
 <? include($template->getfile('default/admin/header.html')); ?>
 <div class="right fr">

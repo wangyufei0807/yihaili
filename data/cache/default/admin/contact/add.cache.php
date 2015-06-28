@@ -1,4 +1,4 @@
-<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/admin/contact/add.html', '1e8789dadb711ac51f6ddba0836f402e', 1435067939);?>
+<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/admin/contact/add.html', '1e8789dadb711ac51f6ddba0836f402e', 1435415504);?>
 
 <? include($template->getfile('default/admin/header.html')); ?>
 <div class="right fr">

@@ -1,4 +1,4 @@
-<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/admin/news/news_list.html', 'fdb13a4fc78e6b3a5dd12293992540ae', 1435072597);?>
+<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/admin/news/news_list.html', 'b59b41d3a929f8aa21d2f69b5173fc41', 1435419391);?>
 
 <? include($template->getfile('default/admin/header.html')); ?>
 <div class="right fr">
@@ -6,12 +6,12 @@
 		<div class="fl now1"></div>
 		<div class="fl now2">
 			<span class="fl">文章列表</span>
-			<span class="fr fabu mat8"><a href="admin.php?mod=article&amp;act=add">发布文章</a></span>
+			<span class="fr fabu mat8"><a href="admin.php?mod=news&amp;act=add">发布文章</a></span>
 		</div>
 		<div class="fl now3"></div>
 		<div class="clear"></div>
 	</div>
-	<div class="spqh mat8">
+	<!-- <div class="spqh mat8">
 		<div class="fr searbox mat3">
 			<form method="get">
 				<input type="text" name="keyword" value="<?=$_g_keyword?>" class="inputtext inputtext_200 fl" />
@@ -21,7 +21,7 @@
 			</form>
 		</div>
 		<div class="clear"></div>
-	</div>
+	</div> -->
 	<form method="post" id="form">
 	<table border="0" cellspacing="0" cellpadding="0" class="list mat5">
 	<tr>
@@ -40,14 +40,14 @@
 		<td align="center"><?=$v['article_atime']?></td>
 		<td align="center"><?=$v['article_clicknum']?></td>
 		<td align="center">
-			<a href="admin.php?mod=article&amp;act=edit&amp;id=<?=$v['article_id']?>" class="admin_edit">修改</a>
-			<a href="admin.php?mod=article&amp;act=delsql&amp;id=<?=$v['article_id']?>" class="admin_del" onclick="return pe_cfone('删除')">删除</a>
+			<a href="admin.php?mod=news&amp;act=edit&amp;id=<?=$v['article_id']?>" class="admin_edit">修改</a>
+			<a href="admin.php?mod=news&amp;act=delsql&amp;id=<?=$v['article_id']?>" class="admin_del" onclick="return pe_cfone('删除')">删除</a>
 		</td>
 	</tr><? } } ?><tr>
 		<td class="bgtt"><input type="checkbox" name="checkall" onclick="pe_checkall(this, 'article_id')" /></td>
 		<td class="bgtt" colspan="6">
 			<span class="fl">
-				<button href="admin.php?mod=article&amp;act=delsql" onclick="return pe_cfall(this, 'article_id', 'form', '批量删除')">批量删除</button>
+				<button href="admin.php?mod=news&amp;act=delsql" onclick="return pe_cfall(this, 'article_id', 'form', '批量删除')">批量删除</button>
 			</span>
 			<span class="fenye"><?=$page?></span>
 		</td>

@@ -1,4 +1,4 @@
-<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/admin/contact/list.html', '18662fa3db9fb3ab7bab56c84c1dbac5', 1435067938);?>
+<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/admin/contact/list.html', '83e39a1af9916a8ba5c142570a58a3b4', 1435419207);?>
 
 <? include($template->getfile('default/admin/header.html')); ?>
 <div class="right fr">
@@ -6,7 +6,7 @@
 		<div class="fl now1"></div>
 		<div class="fl now2">
 			<span class="fl">列表</span>
-			<span class="fr fabu mat8"><a href="admin.php?mod=about&amp;act=add">增加</a></span>
+			<span class="fr fabu mat8"><a href="admin.php?mod=contact&amp;act=add">增加</a></span>
 		</div>
 		<div class="fl now3"></div>
 		<div class="clear"></div>
@@ -23,13 +23,13 @@
 		<td align="center"><?=$v['id']?></td>
 		<td align="center"><?=$v['name']?></td>
 		<td align="center">
-			<a href="admin.php?mod=about&amp;act=edit&amp;id=<?=$v['id']?>" class="admin_edit">修改</a>
-			<a href="admin.php?mod=about&amp;act=delsql&amp;id=<?=$v['id']?>" class="admin_del" onclick="return pe_cfone('删除')">删除</a>
+			<a href="admin.php?mod=contact&amp;act=edit&amp;id=<?=$v['id']?>" class="admin_edit">修改</a>
+			<a href="admin.php?mod=contact&amp;act=delsql&amp;id=<?=$v['id']?>" class="admin_del" onclick="return pe_cfone('删除')">删除</a>
 		</td>
 	</tr><? } } ?><tr>
 		<td class="bgtt" align="center"><input type="checkbox" name="checkall" onclick="pe_checkall(this, 'id')" /></td>
 		<td class="bgtt" colspan="6">
-			<span class="fl"><button href="admin.php?mod=about&amp;act=delsql" onclick="return pe_cfall(this, 'id', 'form', '批量删除')">批量删除</button></span>
+			<span class="fl"><button href="admin.php?mod=contact&amp;act=delsql" onclick="return pe_cfall(this, 'id', 'form', '批量删除')">批量删除</button></span>
 			<span class="fenye"><?=$page?></span>
 		</td>
 	</tr>

@@ -1,4 +1,4 @@
-<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/admin/product/product_list.html', 'f5e4ff63d6211c5aa9686a7184311296', 1435067890);?>
+<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/admin/product/product_list.html', '89cb79dc85cf28cd73c585302a9ab00e', 1435418703);?>
 
 <? include($template->getfile('default/admin/header.html')); ?>
 <div class="right fr">
@@ -11,9 +11,9 @@
 		<div class="fl now3"></div>
 		<div class="clear"></div>
 	</div>
-	<div class="spqh mat8">
+	<!-- <div class="spqh mat8">
 		<div class="fr searbox mat3">
-			<form method="get">
+			<form method="get" action="">
 				<input type="text" name="keyword" value="<?=$_g_keyword?>" class="inputtext inputtext_200 fl" />
 				<select name="category_id" class="inputselect fl mal5 mar5">
 					<option value="">所有分类</option><? if(is_array($category_treelist)) { foreach($category_treelist as $key => $v) { ?><option value="<?=$v['category_id']?>" <? if($v['category_id']==$category_id) { ?>selected="selected"<? } ?>><?=$v['category_showname']?></option><? } } ?></select>
@@ -21,7 +21,7 @@
 			</form>
 		</div>
 		<div class="clear"></div>
-	</div>
+	</div> -->
 	<form method="post" id="form">
 	<table border="0" cellspacing="0" cellpadding="0" class="list mat5">
 	<tr>

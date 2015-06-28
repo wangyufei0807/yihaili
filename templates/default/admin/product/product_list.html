@@ -9,21 +9,21 @@
 		<div class="fl now3"></div>
 		<div class="clear"></div>
 	</div>
-	<div class="spqh mat8">
+	<!-- <div class="spqh mat8">
 		<div class="fr searbox mat3">
-			<form method="get">
+			<form method="get" action="">
 				<input type="text" name="keyword" value="{$_g_keyword}" class="inputtext inputtext_200 fl" />
 				<select name="category_id" class="inputselect fl mal5 mar5">
 					<option value="">所有分类</option>
-					<!--{loop $category_treelist $key $v}-->
-					<option value="{$v['category_id']}" <!--{if $v['category_id']==$category_id}-->selected="selected"<!--{/if}-->>{$v['category_showname']}</option>
-					<!--{/loop}-->
+					{loop $category_treelist $key $v}
+					<option value="{$v['category_id']}" {if $v['category_id']==$category_id}selected="selected"{/if}>{$v['category_showname']}</option>
+					{/loop}
 				</select>
 				<input type="submit" value="搜索" class="input2" />
 			</form>
 		</div>
 		<div class="clear"></div>
-	</div>
+	</div> -->
 	<form method="post" id="form">
 	<table border="0" cellspacing="0" cellpadding="0" class="list mat5">
 	<tr>

@@ -77,7 +77,7 @@ switch ($act) {
 	}else{
 		$sql  = "select a.*,b.* from `".dbpre."admin` as a, `".dbpre."authgroup` as b where  a.groupid=b.groupid";
 	}
-		$info_list = $db->selectall($sql, array(20, $page));
+		$info_list = $db->selectall($sql, array(15, $_g_page));
 		$page=$db->page->html;
 		foreach ($info_list as $k => $v) {
 			$info_list[$k]['admin_ltime']=pe_date($v['admin_ltime']);

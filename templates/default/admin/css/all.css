@@ -37,3 +37,11 @@ textarea{font-size:14px;}
 .c666{color:#666}
 .c333{color:#333}
 .c888{color:#888}
+
+/* 分页样式 */
+.fenye{
+	float: right;
+}
+.fenye a.sel{
+	color: red;
+}

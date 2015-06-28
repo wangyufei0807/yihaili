@@ -109,7 +109,7 @@ switch ($act) {
 		$sqlwhere .= " order by a.product_id desc";
 		$sql  = "select a.*,b.* from `".dbpre."product` as a,`".dbpre."category` as b where a.category_id=b.category_id".$sqlwhere;
 
-		$info_list = $db->selectall($sql, array(20, $page));
+		$info_list = $db->selectall($sql, array(15, $_g_page));
 		foreach ($info_list as $k => $v) {
 			$info_list[$k]['product_atime']=pe_date($v['product_atime']);
 		}

@@ -77,7 +77,7 @@ switch ($act) {
 	//#####################@ 文章删除sql @#####################//
 	case 'delsql':
 		Core_Auth::checkauth("news_del"); //删除文章
-		$news_id = is_array($_p_news_id) ? $_p_news_id : $_g_id;
+		$news_id = is_array($_p_article_id) ? $_p_article_id : $_g_id;
 		if (is_array($news_id)) {
 			foreach ($news_id as $k => $v) {
 				$where_arr[] = $v;
@@ -109,7 +109,7 @@ switch ($act) {
 		$sqlwhere .= " order by a.article_id desc";
 		$sql  = "select a.*,b.* from `".dbpre."news` as a,`".dbpre."category` as b where a.category_id=b.category_id".$sqlwhere;
 
-		$info_list = $db->selectall($sql, array(20, $page));
+		$info_list = $db->selectall($sql, array(15, $_g_page));
 		foreach ($info_list as $k => $v) {
 			$info_list[$k]['article_atime']=pe_date($v['article_atime']);
 		}
