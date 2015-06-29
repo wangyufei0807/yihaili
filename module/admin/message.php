@@ -5,6 +5,7 @@ switch ($act) {
 	case 'show':
 		Core_Auth::checkauth("message_show"); //查看留言
 		$info = $db->select("select * from `".dbpre."message` where msg_id='$_g_id'");
+
 		$info['msg_atime']=pe_date($info['msg_atime']);
 		include($template->getfile('default/admin/message/message_show.html'));
 	break;

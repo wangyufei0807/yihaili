@@ -279,6 +279,9 @@ body{
 	font-size: 13px;
 	line-height: 25px;
 }
+.show-body img{
+    max-width: 950px;
+}
 
 /* 分页样式 */
 .pagelink{
@@ -298,4 +301,19 @@ body{
 /* 分享 */
 .fenxiang{
     padding-top: 20px;
+}
+
+/* 返回首页与微信 */
+.content_l2{
+    bottom: 78px;
+    float: right;
+    right: 40px;
+    position: fixed;
+}
+.content_l2 .wb{
+    margin-top: 4px;
+    width: 86px;
+}
+.content_l2 .wb img{
+    padding-top: 6px;
 }

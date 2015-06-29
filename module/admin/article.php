@@ -24,7 +24,7 @@ switch ($act) {
 		}
 		$_p_info['article_atime'] = $_p_info['article_atime'] ? strtotime($_p_info['article_atime']) : time();
 
-			$sql="insert into `".dbpre."article` (article_id,article_name,article_text,article_logo,article_atime,article_clicknum,category_id,article_tuijian,article_cuxiao) values (NULL,'".$_p_info['article_name']."','".$_p_info['article_text']."','".$_p_info['article_logo']."','".$_p_info['article_atime']."','".$_p_info['article_clicknum']."','".$_p_info['category_id']."','".$_p_info['article_tuijian']."','".$_p_info['article_cuxiao']."')";
+			$sql="insert into `".dbpre."article` (article_id,article_name,article_summary,article_text,article_logo,article_atime,article_clicknum,category_id,article_tuijian,article_cuxiao) values (NULL,'".$_p_info['article_name']."','".$_p_info['article_summary']."','".$_p_info['article_text']."','".$_p_info['article_logo']."','".$_p_info['article_atime']."','".$_p_info['article_clicknum']."','".$_p_info['category_id']."','".$_p_info['article_tuijian']."','".$_p_info['article_cuxiao']."')";
 
 		if ($article_id = $db->insert($sql)) {
 			//更新标签
@@ -65,7 +65,7 @@ switch ($act) {
 		$_p_info['article_atime'] = $_p_info['article_atime'] ? strtotime($_p_info['article_atime']) : time();
 		$_p_info['article_logo'] && $sqlwhere .= " ,article_logo='".$_p_info['article_logo']."'"; 
 
-		$sql="update `".dbpre."article` set article_name='".$_p_info['article_name']."',article_text='".$_p_info['article_text']."',article_atime='".$_p_info['article_atime']."',category_id='".$_p_info['category_id']."',article_tuijian='".$_p_info['article_tuijian']."',article_cuxiao='".$_p_info['article_cuxiao']."'".$sqlwhere." where article_id='$_g_id'";
+		$sql="update `".dbpre."article` set article_name='".$_p_info['article_name']."',article_summary='".$_p_info['article_summary']."',article_text='".$_p_info['article_text']."',article_atime='".$_p_info['article_atime']."',category_id='".$_p_info['category_id']."',article_tuijian='".$_p_info['article_tuijian']."',article_cuxiao='".$_p_info['article_cuxiao']."'".$sqlwhere." where article_id='$_g_id'";
 
 		if ($db->update($sql)) {
 			echo "<script language='javascript'>alert('修改成功');window.location.href='admin.php?mod=article&act=list';</script>";

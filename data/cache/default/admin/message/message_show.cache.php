@@ -1,4 +1,4 @@
-<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/admin/message/message_show.html', '7ed22d926cc7a524c2527962c4ae85f1', 1435570929);?>
+<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/admin/message/message_show.html', 'dfd248097716af3b10452c1164cce6fe', 1435588076);?>
 
 <? include($template->getfile('default/admin/header.html')); ?>
 <div class="right fr">
@@ -27,8 +27,12 @@
 		<td><?=$info['user_phone']?></td>
 	</tr>
 	<tr>
+		<td>地址：</td>
+		<td><?=$info['user_address']?></td>
+	</tr>
+	<tr>
 		<td>留言时间：</td>
-		<td><?=$info['user_atime']?></td>
+		<td><?=$info['msg_atime']?></td>
 	</tr>
 	<tr>
 		<td>留言内容：</td>

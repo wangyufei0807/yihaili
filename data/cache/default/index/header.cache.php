@@ -1,4 +1,4 @@
-<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/index/header.html', '18130ce7c35aef23f4da92f902119926', 1435572017);?>
+<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/index/header.html', '1e3a403b9a5569e8314a9fa6e3153dc2', 1435592453);?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -83,7 +83,7 @@
 		                	<a href="/index.php?mod=news&amp;act=list&amp;type=10">壹海里资讯</a>
 		                </li>
 		                <li <? if($_g_mod!="taobao") { ?>onmouseout="mout(5);" onmouseover="mover(5);"<? } ?> class="m_li" id="m_5">
-		                	<a href="#">淘宝商城</a>
+		                	<a href="http://shop117407517.taobao.com/?spm=a230r.7195193.1997079397.2.YKYEg8&amp;qq-pf-to=pcqq.c2c" target="_blank">淘宝商城</a>
 		                </li>
 		                <li <? if($_g_mod!="contact") { ?>onmouseout="mout(6);" onmouseover="mover(6);"<? } ?> <? if($_g_mod=="contact") { ?>class="m_li_a"<? } else { ?>class="m_li"<? } ?> id="m_6">
 		                	<a href="/index.php?mod=contact&amp;id=1">联系我们</a>

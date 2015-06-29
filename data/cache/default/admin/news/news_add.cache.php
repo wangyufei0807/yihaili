@@ -1,4 +1,4 @@
-<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/admin/news/news_add.html', '7e0d43d47644f3962945c71e5c2bc238', 1435572534);?>
+<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/admin/news/news_add.html', 'b2ec5f147b643566324021680f1606d8', 1435587536);?>
 
 <? include($template->getfile('default/admin/header.html')); ?>
 <div class="right fr">
@@ -39,7 +39,12 @@
 		<td>发布日期：</td>
 		<td colspan="2"><input type="text" name="info[article_atime]" value="<?=$info['article_atime']?>" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm'})" class="Wdate" /></td>
 	</tr>
-
+	<tr>
+		<td>概要：</td>
+		<td colspan="2">
+		<textarea name="info[article_summary]"  style="width:100%;height:50px"><?=$info['article_summary']?></textarea>
+		</td>
+	</tr>
 	<tr>
 		<td colspan="3"><textarea name="info[article_text]" id="editortext" style="width:100%;height:600px"><?=$info['article_text']?></textarea></td>
 	</tr>

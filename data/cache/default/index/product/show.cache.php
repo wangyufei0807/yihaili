@@ -1,4 +1,4 @@
-<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/index/product/show.html', '4027787fc9adf0038d33156432963af1', 1435570848);?>
+<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/index/product/show.html', '4027787fc9adf0038d33156432963af1', 1435589621);?>
 
 <? include($template->getfile('default/index/header.html')); ?>
 <!-- 内容 -->

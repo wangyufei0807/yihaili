@@ -1,4 +1,4 @@
-<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/index/baike/list.html', 'ff19d7b2b473bca5ca3eaceca34d4b39', 1435572022);?>
+<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/index/baike/list.html', '2b6bd10481602215c0dc5d88524a32d4', 1435591237);?>
 
 <? include($template->getfile('default/index/header.html')); ?>
 <!-- 内容 -->
@@ -15,7 +15,7 @@
                             <p>
                                 <img width="145px" height="145px" src="<?=$v['article_logo']?>">
                                 <a href="/index.php?mod=baike&amp;act=info&amp;id=<?=$v['article_id']?>"><?=$v['article_name']?></a><br>
-                                展会背景介绍：由中国医药保健品进出口商会与上海博华国际展览有限公司联合主办的“第六届中国国际健康与营养保健品
+                                <?=$v['article_summary']?>
                                 <br>
                                 <span><a href="/index.php?mod=baike&amp;act=info&amp;id=<?=$v['article_id']?>">更多&gt;&gt;</a></span>
                             </p>

@@ -1,4 +1,4 @@
-<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/admin/news/news_list.html', '8ac81c358824e898aa5af45f742ce967', 1435572533);?>
+<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/admin/news/news_list.html', 'b59b41d3a929f8aa21d2f69b5173fc41', 1435591035);?>
 
 <? include($template->getfile('default/admin/header.html')); ?>
 <div class="right fr">
@@ -41,7 +41,7 @@
 		<td align="center"><?=$v['article_clicknum']?></td>
 		<td align="center">
 			<a href="admin.php?mod=news&amp;act=edit&amp;id=<?=$v['article_id']?>" class="admin_edit">修改</a>
-			<!-- <a href="admin.php?mod=news&amp;act=delsql&amp;id=<?=$v['article_id']?>" class="admin_del" onclick="return pe_cfone('删除')">删除</a> -->
+			<a href="admin.php?mod=news&amp;act=delsql&amp;id=<?=$v['article_id']?>" class="admin_del" onclick="return pe_cfone('删除')">删除</a>
 		</td>
 	</tr><? } } ?><tr>
 		<td class="bgtt"><input type="checkbox" name="checkall" onclick="pe_checkall(this, 'article_id')" /></td>

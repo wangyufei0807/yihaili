@@ -1,4 +1,4 @@
-<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/index/contact/show.html', '0156fb3789bac62b08bfddac25330244', 1435570654);?>
+<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/index/contact/show.html', '0156fb3789bac62b08bfddac25330244', 1435592498);?>
 
 <? include($template->getfile('default/index/header.html')); ?>
 <!-- 内容 -->
