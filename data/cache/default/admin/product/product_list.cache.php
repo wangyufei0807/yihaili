@@ -1,4 +1,4 @@
-<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/admin/product/product_list.html', '89cb79dc85cf28cd73c585302a9ab00e', 1435418703);?>
+<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/admin/product/product_list.html', '1cc25e1d572774482ffa2cb1f681fbb7', 1435571910);?>
 
 <? include($template->getfile('default/admin/header.html')); ?>
 <div class="right fr">
@@ -40,8 +40,8 @@
 		<td align="center"><?=$v['product_atime']?></td>
 		<td align="center"><?=$v['product_clicknum']?></td>
 		<td align="center">
-			<a href="admin.php?mod=product&amp;act=edit&amp;id=<?=$v['product_id']?>" class="admin_edit">修改</a>
-			<a href="admin.php?mod=product&amp;act=delsql&amp;id=<?=$v['product_id']?>" class="admin_del" onclick="return pe_cfone('删除')">删除</a>
+			<!-- <a href="admin.php?mod=product&amp;act=edit&amp;id=<?=$v['product_id']?>" class="admin_edit">修改</a> -->
+			<!-- <a href="admin.php?mod=product&amp;act=delsql&amp;id=<?=$v['product_id']?>" class="admin_del" onclick="return pe_cfone('删除')">删除</a> -->
 		</td>
 	</tr><? } } ?><tr>
 		<td class="bgtt"><input type="checkbox" name="checkall" onclick="pe_checkall(this, 'product_id')" /></td>

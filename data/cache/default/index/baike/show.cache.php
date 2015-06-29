@@ -1,4 +1,4 @@
-<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/index/baike/show.html', '325ec144c400f194454d05583fef8b6c', 1435570615);?>
+<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/index/baike/show.html', '325ec144c400f194454d05583fef8b6c', 1435572028);?>
 
 <? include($template->getfile('default/index/header.html')); ?>
 <!-- 内容 -->

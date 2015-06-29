@@ -1,4 +1,4 @@
-<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/index/footer.html', '207575ba5708c7f4770ff162df3fe146', 1435570615);?>
+<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/index/footer.html', '207575ba5708c7f4770ff162df3fe146', 1435572017);?>
 	<div class="g-ft">
 		<div class="g-in">
 			<p>版权所有：青岛大桥海洋生物科技有限公司北京分公司 备案号：京ICP备15013724号</p>

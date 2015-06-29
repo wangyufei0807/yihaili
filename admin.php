@@ -4,8 +4,8 @@ $admin_id_key=$_SESSION['admin_id_key'];
 $adminmenu[] = array(
 	'headnav' => '关于我们',
 	'subnav' => array(
-		array('name' => '内容列表', 'menumark' => 'about_list', 'url' => 'admin.php?mod=about&act=list'),
-		array('name' => '添加内容', 'menumark' => 'about_add', 'url' => 'admin.php?mod=about&act=add')
+		array('name' => '内容列表', 'menumark' => 'about_list', 'url' => 'admin.php?mod=about&act=list')
+		/*array('name' => '添加内容', 'menumark' => 'about_add', 'url' => 'admin.php?mod=about&act=add')*/
 	)
 );
 
@@ -33,8 +33,8 @@ $adminmenu[] = array(
 $adminmenu[] = array(
 	'headnav' => '联系方式',
 	'subnav' => array(
-		array('name' => '内容列表', 'menumark' => 'contact_list', 'url' => 'admin.php?mod=contact&act=list'),
-		array('name' => '添加内容', 'menumark' => 'contact_add', 'url' => 'admin.php?mod=contact&act=add')
+		array('name' => '内容列表', 'menumark' => 'contact_list', 'url' => 'admin.php?mod=contact&act=list')
+		/*array('name' => '添加内容', 'menumark' => 'contact_add', 'url' => 'admin.php?mod=contact&act=add')*/
 	)
 );
 /*$adminmenu[] = array(

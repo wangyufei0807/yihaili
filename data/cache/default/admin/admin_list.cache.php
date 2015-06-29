@@ -1,4 +1,4 @@
-<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/admin/admin_list.html', 'bfe3a0be905e0fe5c0f90e6d0a020a8c', 1435419483);?>
+<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/admin/admin_list.html', 'bfe3a0be905e0fe5c0f90e6d0a020a8c', 1435572006);?>
 
 <? include($template->getfile('default/admin/header.html')); ?>
 <div class="right fr">
