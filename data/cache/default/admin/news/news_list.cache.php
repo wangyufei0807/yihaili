@@ -1,4 +1,4 @@
-<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/admin/news/news_list.html', '8ac81c358824e898aa5af45f742ce967', 1435571998);?>
+<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/admin/news/news_list.html', '8ac81c358824e898aa5af45f742ce967', 1435572533);?>
 
 <? include($template->getfile('default/admin/header.html')); ?>
 <div class="right fr">

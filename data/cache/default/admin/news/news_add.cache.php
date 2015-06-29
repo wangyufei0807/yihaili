@@ -1,4 +1,4 @@
-<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/admin/news/news_add.html', '0b736ae104b2048e4d3b11abaec96905', 1435419216);?>
+<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/admin/news/news_add.html', '7e0d43d47644f3962945c71e5c2bc238', 1435572534);?>
 
 <? include($template->getfile('default/admin/header.html')); ?>
 <div class="right fr">
@@ -24,11 +24,10 @@
 		</td>
 	</tr>
 	<tr>
-		<td>文章标签：</td>
+		<td></td>
 		<td>
 
-			<input type="checkbox" name="info[article_tuijian]"  <? if($info['article_tuijian']==1) { ?>  value="0" checked="checked" <? } else { ?>value="1"<? } ?>/>推荐
-			<input type="checkbox" name="info[article_cuxiao]" <? if($info['article_cuxiao']==1) { ?> value="0"  checked="checked" <? } else { ?>value="1"<? } ?>/>置顶
+			
 		</td>
 	</tr>
 		<tr>
