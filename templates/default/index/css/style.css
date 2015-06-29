@@ -294,3 +294,8 @@ body{
 .pagelink a.sel{
     color: red;
 }
+
+/* 分享 */
+.fenxiang{
+    padding-top: 20px;
+}

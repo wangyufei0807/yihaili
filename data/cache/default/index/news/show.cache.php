@@ -1,4 +1,4 @@
-<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/index/news/show.html', '6376646d46ac875d7d8c1b6cc90dcb88', 1435500286);?>
+<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/index/news/show.html', '286886a908ff5dd9918c4e9de261de1f', 1435570646);?>
 
 <? include($template->getfile('default/index/header.html')); ?>
 <!-- 内容 -->
@@ -14,6 +14,9 @@
                     <h6 class="time"><?=$info['article_atime']?></h6>
                     <div class="show-con">
                         <?=$info['article_text']?>
+                    </div>
+                    <div class="fenxiang">
+                        <div class="bshare-custom"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到网易微博" class="bshare-neteasemb"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div><script src="http://static.bshare.cn/b/buttonLite.js#style=-1&uuid=93ff2150-2329-44d4-b3d1-fd4995bd6685&pophcol=2&lang=zh" type="text/javascript"></script><script src="http://static.bshare.cn/b/bshareC0.js" type="text/javascript"></script>
                     </div>
         		</div>
 	    	</div>

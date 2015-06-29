@@ -1,4 +1,4 @@
-<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/index/header.html', '18130ce7c35aef23f4da92f902119926', 1435509279);?>
+<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/index/header.html', '18130ce7c35aef23f4da92f902119926', 1435570615);?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

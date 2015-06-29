@@ -1,4 +1,4 @@
-<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/index/index.html', '966e690eb9bf23936ed5f5d7846b10db', 1435509271);?>
+<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/index/index.html', 'bcfc284579193b588f624411b989a83f', 1435567319);?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,5 +47,6 @@
 		</div>
 	</div>
 </div>
+<script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F7f5e16a363a0c8ba3e6231d51abe7af1' type='text/javascript'%3E%3C/script%3E")) </script>
 </body>
 </html>

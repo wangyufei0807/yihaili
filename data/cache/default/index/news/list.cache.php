@@ -1,4 +1,4 @@
-<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/index/news/list.html', '785c8cab27e309d649fedcde76f25d99', 1435509302);?>
+<? if (!class_exists('template')) die('Access Denied');$template->getInstance()->check('default/index/news/list.html', '785c8cab27e309d649fedcde76f25d99', 1435570644);?>
 
 <? include($template->getfile('default/index/header.html')); ?>
 <!-- 内容 -->
